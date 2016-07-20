@@ -44,4 +44,4 @@
         System.out.println(value);//1.06
 ```
 
-1.205
+
