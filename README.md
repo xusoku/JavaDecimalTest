@@ -21,26 +21,27 @@
         BigDecimal temp= new BigDecimal(100);
         System.out.println(temp.subtract(se).intValue());//53
         BigDecimal tof=f.multiply(temp.subtract(se));
-        System.out.println(tof.intValue());
+        System.out.println(tof.intValue());//10600
 
 
         String toActul=formatTwoRMB(to.intValue()/10000d);
-        System.out.println(toActul);
+        System.out.println(toActul); //0.94
 
 
         tof=new BigDecimal("1205");
         String toNotActul=formatTwoRMB(tof.intValue()/1000d);
 
-        System.out.println(tof.intValue()/1000d);
+        System.out.println(tof.intValue()/1000d);// 1.205
 
-        System.out.println(toNotActul);
+        System.out.println(toNotActul);//1.21
 
 
         Double a=1.0560232;
-        System.out.println(Math.round(a*100 + 0.5)/100.0);
+        System.out.println(Math.round(a*100 + 0.5)/100.0);//1.06
 
         Double value= new BigDecimal(a).setScale(2,java.math.BigDecimal.ROUND_HALF_UP).doubleValue();
 
-        System.out.println(value);
+        System.out.println(value);//1.06
 ```
 
+1.205
