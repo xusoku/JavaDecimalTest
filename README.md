@@ -1,12 +1,4 @@
-      --------------
-      BigDecimal.setScale()方法用于格式化小数点
-      setScale(1)表示保留一位小数，默认用四舍五入方式 
-      setScale(1,BigDecimal.ROUND_DOWN)直接删除多余的小数位，如2.35会变成2.3 
-      setScale(1,BigDecimal.ROUND_UP)进位处理，2.35变成2.4 
-      setScale(1,BigDecimal.ROUND_HALF_UP)四舍五入，2.35变成2.4
-      setScaler(1,BigDecimal.ROUND_HALF_DOWN)四舍五入，2.35变成2.3，如果是5则向下舍
-      -------------
-      ```java  
+```java  
         BigDecimal f=new BigDecimal("2");
         f=f.multiply(new BigDecimal(100));
         System.out.println(f.intValue());  //200
@@ -42,5 +34,5 @@
         Double value= new BigDecimal(a).setScale(2,java.math.BigDecimal.ROUND_HALF_UP).doubleValue();
 
         System.out.println(value);
-        ```
+```
 
